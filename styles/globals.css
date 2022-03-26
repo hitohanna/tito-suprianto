@@ -1,16 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter text-white bg-hitam;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.pglobal {
+  @apply px-4 md:px-6 lg:px-0;
 }
 
-* {
-  box-sizing: border-box;
+.buttgold {
+  @apply px-4 py-2 bg-gold text-hitam font-medium hover:bg-[#977C3D] transition-colors duration-75 ease-in-out;
+}
+
+.kepala {
+  @apply text-2xl font-bold lg:text-4xl;
 }
